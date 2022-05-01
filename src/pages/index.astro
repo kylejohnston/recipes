@@ -63,11 +63,11 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
 	<body>
 		<BlogHeader />
-		<div class="wrapper">
+		<div class="wrapper text-3xl max-w-2xl mx-auto border">
 			<main class="content">
 				<section class="intro">
-					<h1 class="latest">{title}</h1>
-					<p>{description}</p>
+					<h1 class="latest text-xl">{title}</h1>
+					<p class="text-sm pt-4">{description}</p>
 				</section>
 				<section aria-label="Blog post list">
 					{allPosts.map((p) => <BlogPostPreview post={p} />)}

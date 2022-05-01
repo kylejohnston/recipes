@@ -3,7 +3,7 @@ setup: |
   import Layout from '../../layouts/BlogPost.astro'
   import Cool from '../../components/Author.astro'
 title: Hello world!
-publishDate: 12 Sep 2021
+# publishDate: 12 Sep 2021
 name: Nate Moore
 value: 128
 description: Just a Hello World Post!
@@ -13,7 +13,7 @@ description: Just a Hello World Post!
 
 This is so cool!
 
-Do variables work {frontmatter.value * 2}?
+Do variables work {frontmatter.value * 2}? Hello world!
 
 ```javascript
 // Example JavaScript

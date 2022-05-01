@@ -16,7 +16,7 @@ const { title, description, publishDate, author, heroImage, permalink, alt } = c
 
 	<body>
 		<BlogHeader />
-		<div class="wrapper">
+		<div class="wrapper max-w-2xl mx-auto">
 			<BlogPost {title} {author} {heroImage} {publishDate} {alt}>
 				<slot />
 			</BlogPost>
