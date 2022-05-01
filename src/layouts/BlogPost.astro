@@ -10,13 +10,12 @@ const { title, description, publishDate, author, heroImage, permalink, alt } = c
 
 <html lang={content.lang || 'en'}>
 	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css"/>
 		<BaseHead {title} {description} {permalink} />
 	</head>
 
 	<body>
 		<BlogHeader />
-		<div class="wrapper max-w-2xl mx-auto">
+		<div class="wrapper max-w-2xl mx-auto px-3 md:px-0">
 			<BlogPost {title} {author} {heroImage} {publishDate} {alt}>
 				<slot />
 			</BlogPost>

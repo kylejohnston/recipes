@@ -5,11 +5,12 @@ setup: |
 title: This is my first post!
 # publishDate: 12 Sep 2019
 name: Kyle Johnston
+link: 'https://www.google.com'
 value: 128
 description: Just a Hello World Post!
 ---
 
-<Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />
+<Cool name={frontmatter.name} class='border' href={frontmatter.link} client:load />
 
 This is my first post.
 

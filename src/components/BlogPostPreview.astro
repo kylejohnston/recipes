@@ -6,16 +6,16 @@ export interface Props {
 const { post } = Astro.props;
 ---
 
-<article class="post-preview">
+<article class="post-preview bg-gray-100 mb-3">
 	<header>
 		<p class="publish-date">{post.frontmatter.publishDate}</p>
-		<a href={post.url}><h1 class="title">{post.frontmatter.title}</h1></a>
+		<a href={post.url}><h1 class="title text-3xl font-bold">{post.frontmatter.title}</h1></a>
 	</header>
 	<p>{post.frontmatter.description}</p>
 	<a href={post.url}>Read more</a>
 </article>
 
-<style>
+<!-- <style>
 	.content :global(main > * + *) {
 		margin-top: 1rem;
 	}
@@ -52,4 +52,4 @@ const { post } = Astro.props;
 		font-weight: 700;
 		color: var(--theme-text);
 	}
-</style>
+</style> -->
