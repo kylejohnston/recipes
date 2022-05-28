@@ -1,0 +1,25 @@
+---
+// PURPOSE: VIEW A SINGLE POST/RECIPE
+import Head from '../components/_Head.astro';
+import MainNav from '../components/MainNav.astro';
+import PostContent from '../components/PostContent.astro';
+
+
+const { content } = Astro.props;
+const { title, description, publishDate, author, heroImage, permalink, alt } = content;
+---
+
+<html lang={content.lang || 'en'}>
+	<head>
+		<Head {title} {description} {permalink} />
+	</head>
+
+	<body>
+		<MainNav />
+		<div class="wrapper max-w-2xl mx-auto px-3 md:px-0">
+			<PostContent {title} {author} {heroImage} {publishDate} {alt}>
+				<slot /> <!-- add content from .md -->
+			</PostContent>
+		</div>
+	</body>
+</html>
