@@ -7,3 +7,10 @@ export default defineConfig({
 	integrations: [preact()],
 	integrations: [tailwind()],
 });
+
+{
+	site: 'https://kylejohnston.github.io/'
+}
+{
+	base: '/recipes'
+}
