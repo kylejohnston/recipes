@@ -4,20 +4,18 @@ import Head from '../components/_Head.astro';
 import MainNav from '../components/MainNav.astro';
 import PostContent from '../components/PostContent.astro';
 
-
 const { content } = Astro.props;
-const { title, description, publishDate, author, heroImage, permalink, alt } = content;
+const { title, description, publishDate, heroImage, permalink, alt } = content;
 ---
-
-<html lang={content.lang || 'en'}>
+<html lang="en">
 	<head>
 		<Head {title} {description} {permalink} />
 	</head>
 
-	<body>
+	<body class="">
 		<MainNav />
-		<div class="wrapper max-w-2xl mx-auto px-3 md:px-0">
-			<PostContent {title} {author} {heroImage} {publishDate} {alt}>
+		<div class="post wrapper rounded-lg py-2">
+			<PostContent {title} {heroImage} {publishDate} {alt} {description}>
 				<slot /> <!-- add content from .md -->
 			</PostContent>
 		</div>

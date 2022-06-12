@@ -14,7 +14,10 @@ module.exports = {
       blue: colors.indigo,
       purple: colors.violet,
     },
-    extend: {
+  extend: {
+    fontFamily: {
+      sans: ['IBM Plex Sans'],
+    },
       // ...
     },
   },
