@@ -30,7 +30,7 @@ allRecipes = allRecipes.sort((a, b) => new Date(b.frontmatter.publishDate).value
 		<MainNav />
 		<div class="wrapper px-4">
 			<main class="content">
-				<section aria-label="Blog post list">
+				<section aria-label="Recipe list">
 					{allRecipes.map((p) => <PostList post={p} />)}
 				</section>
 			</main>
