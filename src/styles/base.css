@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @layer components {
-  body { background: url('/src/images/moonrise.jpg') top left; background-size:cover;  @apply max-w-xl mx-auto p-1 bg-purple-900 font-sans text-xl text-gray-50 md:px-0; }
+  body { @apply max-w-xl mx-auto p-1 bg-purple-900 font-sans text-xl text-gray-50 md:px-0; }
 
   a:link, a:visited { @apply text-purple-100; }
   a:hover, a:active { @apply underline; }
