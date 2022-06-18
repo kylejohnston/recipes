@@ -28,9 +28,10 @@ allRecipes = allRecipes.sort((a, b) => new Date(b.frontmatter.publishDate).value
 
 	<body class="mx-auto">
 		<MainNav />
-		<div class="wrapper px-4">
+		<div class="wrapper px-3">
 			<main class="content">
-				<section aria-label="Recipe list pineapple">
+				<section aria-label="Recipe list
+				">
 					{allRecipes.map((p) => <PostList post={p} />)}
 				</section>
 			</main>
