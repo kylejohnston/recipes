@@ -12,5 +12,5 @@ export default defineConfig({
 	site: 'https://kylejohnston.github.io/recipes'
 }
 {
-	base: '/recipes'
+	base: 'https://kylejohnston.github.io/recipes'
 }
