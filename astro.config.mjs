@@ -11,3 +11,6 @@ export default defineConfig({
 {
 	site: 'https://kylejohnston.github.io/recipes/'
 }
+{
+	base: '/dist'
+}
