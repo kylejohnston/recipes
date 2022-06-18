@@ -9,8 +9,8 @@ export default defineConfig({
 });
 
 {
-	site: 'https://kylejohnston.github.io/recipes/'
+	site: 'https://kylejohnston.github.io/'
 }
 {
-	base: '/dist'
+	base: '/recipes'
 }
