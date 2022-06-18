@@ -1,6 +1,6 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2022-06-12
+publishDate: 2022-06-14
 title: Cheesy Tomato Italian Sausage Pasta
 description:
 category: Dinner
