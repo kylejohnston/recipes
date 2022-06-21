@@ -1,7 +1,7 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
 publishDate: 2020-01-01
-title: Emeril’s Beef Stroganoff
+title: Beef Stroganoff
 description:
 category: Dinner
 keyIngredient: Beef
