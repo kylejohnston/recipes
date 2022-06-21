@@ -5,10 +5,3 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 	integrations: [tailwind()],
 });
-
-{
-	site: 'https://kylejohnston.github.io/recipes'
-}
-{
-	base: 'https://kylejohnston.github.io/recipes'
-}
