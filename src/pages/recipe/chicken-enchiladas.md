@@ -22,10 +22,10 @@ keyIngredient: Chicken
 ## Directions
 - In a frying pan, cook chicken and onion together in oil over medium-high heat until chicken is just done.
 - Divide cooked chicken evenly between tortillas; add cheese to each tortilla.
-- Roll enchiladas and place seam-side down in a 9x13″ baking dish that has been lightly sprayed with no-stick cooking spray.
+- Roll enchiladas and place seam-side down in a square baking dish.
 - Melt butter in a medium saucepan; stir in flour to make a roux, stir and cook until bubbly, and gradually whisk in chicken broth then bring to boiling, stirring frequently.
 - Remove from heat; stir in sour cream and green chilies.
 - Pour sauce evenly over enchiladas.
-- Top with remaining 3/4 cup cheese (a baking dish may be double-wrapped and frozen at this point) and bake at 400° F for 20 minutes until cheese is melted and sauce near edges of baking dish is bubbly.
+- Top with remaining 3/4 cup cheese and bake at 400° F for 20 minutes until cheese is melted and sauce near edges of baking dish is bubbly.
 
 [Source](https://www.food.com/recipe/simply-sour-cream-chicken-enchiladas-129926)
