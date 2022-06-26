@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "dev": "astro dev --experimental-integrations",
+    "start": "astro dev --experimental-integrations",
+    "build": "astro build --experimental-integrations",
+    "preview": "astro preview --experimental-integrations"
   },
   "devDependencies": {
     "@astrojs/preact": "^0.1.2",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^0.2.1",
-    "preact": "^10.7.1"
+    "astro-netlify-cms": "^0.1.0",
+  "preact": "^10.7.1"
   }
 }
