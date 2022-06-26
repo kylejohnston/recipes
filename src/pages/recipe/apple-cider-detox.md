@@ -18,4 +18,3 @@ keyIngredient:
 ## Directions
 - Combine ingredients in a drinking glass. Stir with a spoon to combine.
 - Fill glass with hot water
-- Drink immediately
