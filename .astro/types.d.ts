@@ -87,13 +87,6 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"recipe": {
-".template.md": {
-  id: ".template.md",
-  slug: "template",
-  body: string,
-  collection: "recipe",
-  data: InferEntrySchema<"recipe">
-} & { render(): Render[".md"] },
 "apple-cider-detox.md": {
   id: "apple-cider-detox.md",
   slug: "apple-cider-detox",
