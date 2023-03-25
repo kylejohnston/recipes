@@ -1,6 +1,7 @@
 ---
 // PURPOSE: HOMEPAGE
-import BaseHead from '../components/_Head.astro';
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
 import MainNav from '../components/MainNav.astro';
 import PostList from '../components/PostList.astro';
 
@@ -14,8 +15,11 @@ let permalink = 'https://www.softpanda.de/';
 
 // Data Fetching: List all Markdown posts in the repo.
 
-let allRecipes = await Astro.glob('./recipe/*.md');
-allRecipes = allRecipes.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+// let allRecipes = await Astro.glob('./recipe/*.md');
+// allRecipes = allRecipes.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+const allRecipes = (await getCollection('recipe')).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+)
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
