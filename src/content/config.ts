@@ -3,7 +3,10 @@ import { z, defineCollection } from 'astro:content';
 // 2. Define a schema for each collection you'd like to validate.
 const recipe = defineCollection({
   schema: z.object({
-    publishDate: z.string().transform((str) => new Date()),
+    pubDate: z
+      .string()
+      .or(z.date())
+      .transform((val) => new Date(val)),
     title: z.string(),
     description: z.string().optional(),
     category: z.string().optional(),
