@@ -1,5 +1,5 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
+layout: ../../layouts/PostLayout.astro
 publishDate: March 6, 2022
 title: Spinach Dip (Fresh)
 # description:

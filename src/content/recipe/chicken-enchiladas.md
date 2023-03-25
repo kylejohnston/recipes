@@ -1,5 +1,5 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
+layout: ../../layouts/PostLayout.astro
 publishDate: June 11, 2022
 title: Sour Cream Chicken Enchiladas
 category: Dinner

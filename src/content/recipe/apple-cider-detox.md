@@ -1,5 +1,5 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
+layout: ../../layouts/PostLayout.astro
 publishDate: May 30, 2022
 title: Apple Cider Tumeric Detox Drink
 # description:

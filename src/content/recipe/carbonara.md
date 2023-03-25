@@ -1,5 +1,5 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
+layout: ../../layouts/PostLayout.astro
 title: Carbonara
 # description:
 publishDate: August 1, 2018
