@@ -1,10 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-	content: [
-    './public/**/*.html',
-    './src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}'
-  ],
+	content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
       black: colors.black,

@@ -1,8 +1,8 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2017-01-01
+layout: ../../layouts/PostLayout.astro
+pubDate: Jan 1 2017
 title: Scarpariello
-description:
+# description:
 category: Dinner
 keyIngredient: Italian sausage
 ---

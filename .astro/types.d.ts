@@ -87,9 +87,135 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"recipe": {
+".template.md": {
+  id: ".template.md",
+  slug: "template",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"apple-cider-detox.md": {
+  id: "apple-cider-detox.md",
+  slug: "apple-cider-detox",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"beef-noodle-skillet.md": {
+  id: "beef-noodle-skillet.md",
+  slug: "beef-noodle-skillet",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"beef-stroganoff.md": {
+  id: "beef-stroganoff.md",
+  slug: "beef-stroganoff",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"buffalo-chicken-dip.md": {
+  id: "buffalo-chicken-dip.md",
+  slug: "buffalo-chicken-dip",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"carbonara.md": {
+  id: "carbonara.md",
+  slug: "carbonara",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"cheesy-pasta.md": {
+  id: "cheesy-pasta.md",
+  slug: "cheesy-pasta",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"chicken-enchiladas.md": {
+  id: "chicken-enchiladas.md",
+  slug: "chicken-enchiladas",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"chicken-tetrazzini.md": {
+  id: "chicken-tetrazzini.md",
+  slug: "chicken-tetrazzini",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"coconut-macaroons.md": {
+  id: "coconut-macaroons.md",
+  slug: "coconut-macaroons",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"easy-goulash.md": {
+  id: "easy-goulash.md",
+  slug: "easy-goulash",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"marsala.md": {
+  id: "marsala.md",
+  slug: "marsala",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"pancakes.md": {
+  id: "pancakes.md",
+  slug: "pancakes",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"scarpariello.md": {
+  id: "scarpariello.md",
+  slug: "scarpariello",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"shepherds-pie.md": {
+  id: "shepherds-pie.md",
+  slug: "shepherds-pie",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"sloppy-joes.md": {
+  id: "sloppy-joes.md",
+  slug: "sloppy-joes",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"spinach-dip-fresh.md": {
+  id: "spinach-dip-fresh.md",
+  slug: "spinach-dip-fresh",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"tortilla-soup.md": {
+  id: "tortilla-soup.md",
+  slug: "tortilla-soup",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
 },
 
 	};
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }

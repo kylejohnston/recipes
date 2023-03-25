@@ -1,8 +1,8 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2018-08-15
+layout: ../../layouts/PostLayout.astro
+pubDate: Aug 15 2018
 title: Chicken Tetrazzini
-description:
+# description:
 category: Dinner
 keyIngredient: Chicken
 ---
