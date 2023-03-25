@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Carbonara
 # description:
-publishDate: August 1, 2018
+pubDate: Aug 1 2018
 category: Dinner
 keyIngredient: Pasta
 ---

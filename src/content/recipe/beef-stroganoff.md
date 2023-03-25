@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: January 1, 2020
+pubDate: Jan 1 2020
 title: Beef Stroganoff
 # description:
 category: Dinner

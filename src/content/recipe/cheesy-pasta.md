@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: June 14, 2022
+pubDate: Jun 14 2022
 title: Cheesy Tomato Italian Sausage Pasta
 # description:
 category: Dinner

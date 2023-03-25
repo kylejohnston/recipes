@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: August 30, 2018
+pubDate: Aug 30 2018
 title: Shepherd's Pie
 # description:
 category: Dinner

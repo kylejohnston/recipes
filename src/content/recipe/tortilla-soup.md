@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: June 12, 2018
+pubDate: Jun 12 2018
 title: Tortilla Soup
 # description:
 category: Soup

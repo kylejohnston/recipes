@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: May 28, 2022
+pubDate: May 28 2022
 title: Buffalo Chicken Dip
 # description:
 category: Dip

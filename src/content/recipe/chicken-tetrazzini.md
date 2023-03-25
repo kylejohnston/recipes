@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: August 15, 2018
+pubDate: Aug 15 2018
 title: Chicken Tetrazzini
 # description:
 category: Dinner

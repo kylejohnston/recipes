@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: June 22, 2000
+pubDate: Jun 22 2000
 title: Pancakes
 # description:
 category: Breakfast

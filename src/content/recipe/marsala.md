@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: August 25, 2018
+pubDate: Aug 25 2018
 title: Marsala
 # description:
 category: Dinner

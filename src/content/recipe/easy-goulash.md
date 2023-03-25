@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: April 30, 2022
+pubDate: Apr 30 2022
 title: Easy Goulash
 category: Dinner
 keyIngredient: Beef

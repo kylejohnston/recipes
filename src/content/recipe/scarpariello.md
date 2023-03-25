@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: January 1, 2017
+pubDate: Jan 1 2017
 title: Scarpariello
 # description:
 category: Dinner

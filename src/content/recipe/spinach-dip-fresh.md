@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: March 6, 2022
+pubDate: Mar 6 2022
 title: Spinach Dip (Fresh)
 # description:
 category: Dip

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-publishDate: Jun 21, 2000
+pubDate: Jun 21 2000
 title: Coconut Macaroons
 # description:
 category: Dessert
