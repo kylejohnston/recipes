@@ -1,8 +1,8 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2020-01-01
+publishDate: January 1, 2020
 title: Beef Stroganoff
-description:
+# description:
 category: Dinner
 keyIngredient: Beef
 ---

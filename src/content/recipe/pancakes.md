@@ -1,10 +1,10 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2000-Jun-22
+publishDate: June 22, 2000
 title: Pancakes
-description:
+# description:
 category: Breakfast
-keyIngredient:
+# keyIngredient:
 ---
 
 ## Ingredients

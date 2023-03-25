@@ -1,6 +1,6 @@
 ---
 setup: import Layout from "../../layouts/PostLayout.astro"
-publishDate: 2022-04-30
+publishDate: April 30, 2022
 title: Easy Goulash
 category: Dinner
 keyIngredient: Beef

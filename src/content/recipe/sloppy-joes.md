@@ -1,8 +1,8 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2020-01-02
+publishDate: January 2, 2020
 title: Sloppy Joes
-description:
+# description:
 category: Dinner
 keyIngredient: Beef
 ---

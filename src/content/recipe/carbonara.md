@@ -1,8 +1,8 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
 title: Carbonara
-description:
-publishDate: 2018-08-01
+# description:
+publishDate: August 1, 2018
 category: Dinner
 keyIngredient: Pasta
 ---

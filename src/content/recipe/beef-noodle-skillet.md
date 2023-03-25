@@ -1,8 +1,8 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2022-Oct-24
+publishDate: Oct 24, 2022
 title: Beef Noodle Skillet
-description:
+# description:
 category: Dinner
 keyIngredient: Beef
 ---

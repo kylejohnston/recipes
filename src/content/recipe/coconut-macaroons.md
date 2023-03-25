@@ -1,8 +1,8 @@
 ---
 setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2000-Jun-21
+publishDate: Jun 21, 2000
 title: Coconut Macaroons
-description:
+# description:
 category: Dessert
 keyIngredient: Coconut
 ---
