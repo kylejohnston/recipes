@@ -5,17 +5,17 @@ import MainNav from '../components/MainNav.astro';
 import PostContent from '../components/PostContent.astro';
 
 const { content } = Astro.props;
-const { title, description, publishDate, heroImage, permalink, alt } = content;
+const { title, description, pubDate, heroImage, permalink, alt } = content;
 ---
 <html lang="en">
 	<head>
 		<Head {title} {description} {permalink} />
 	</head>
 
-	<body class="">
+	<body class="mx-auto">
 		<MainNav />
 		<div class="post wrapper rounded-lg py-2">
-			<PostContent {title} {heroImage} {publishDate} {alt} {description}>
+			<PostContent {title} {heroImage} {pubDate} {alt} {description}>
 				<slot /> <!-- add content from .md -->
 			</PostContent>
 		</div>
