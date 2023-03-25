@@ -1,8 +1,8 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2022-05-28
+layout: ../../layouts/PostLayout.astro
+pubDate: May 28 2022
 title: Buffalo Chicken Dip
-description:
+# description:
 category: Dip
 keyIngredient: Chicken
 ---

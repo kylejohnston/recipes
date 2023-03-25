@@ -1,8 +1,8 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2018-06-12
+layout: ../../layouts/PostLayout.astro
+pubDate: Jun 12 2018
 title: Tortilla Soup
-description:
+# description:
 category: Soup
 keyIngredient: Chicken
 ---

@@ -5,16 +5,15 @@
 
 @layer components {
   body { background: url('/images/moonrise.jpg') top center; background-size:cover; @apply max-w-xl mx-auto p-2 bg-purple-900 font-sans text-xl text-gray-50 md:px-0; }
-  /* body {  } */
 
   a:link, a:visited { @apply text-purple-100; }
   a:hover, a:active { @apply underline; }
 
-  h1, h2, h3, h4 { @apply my-6 font-bold px-3 font-sans leading-none; }
-  h1 { @apply text-4xl md:text-5xl; }
-  h2 { @apply text-3xl md:text-4xl; }
-  h3 { @apply text-2xl md:text-3xl; }
-  p  { @apply text-xl leading-normal my-6 px-3; }
+  /* h1, h2, h3, h4 { @apply my-6 font-bold px-3 font-sans leading-none text-green-500; } */
+  article h1 { @apply my-6 font-bold px-3 font-sans leading-none text-4xl md:text-5xl; }
+  article h2 { @apply my-6 font-bold px-3 font-sans leading-none text-3xl md:text-4xl; }
+  article h3 { @apply my-6 font-bold px-3 font-sans leading-none text-2xl md:text-3xl; }
+  article p  { @apply text-xl leading-normal my-6 px-3; }
   .post-preview { @apply bg-white my-6 px-3 py-2 shadow-xl rounded-lg text-gray-800; }
   .post-preview h1, .post-preview h2, .post-preview h3, .post-preview h4, .post-preview p { @apply my-2 px-0; }
     .post-preview header { @apply font-bold; }

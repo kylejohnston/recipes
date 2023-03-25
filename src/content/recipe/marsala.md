@@ -1,8 +1,8 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2018-08-25
+layout: ../../layouts/PostLayout.astro
+pubDate: Aug 25 2018
 title: Marsala
-description:
+# description:
 category: Dinner
 keyIngredient: Italian sausage
 ---

@@ -1,8 +1,8 @@
 ---
-setup: import Layout from '../../layouts/PostLayout.astro'
-publishDate: 2018-08-30
+layout: ../../layouts/PostLayout.astro
+pubDate: Aug 30 2018
 title: Shepherd's Pie
-description:
+# description:
 category: Dinner
 keyIngredient: Beef
 ---

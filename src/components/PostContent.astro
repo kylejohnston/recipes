@@ -1,15 +1,7 @@
 ---
 // PURPOSE: TITLE AND CONTENT FOR A SINGLE POST
 
-export interface Props {
-	publishDate: string;
-	title: string;
-	description: string;
-	category: string;
-	keyIngredient: string;
-}
-
-const { title, description, publishDate, category, keyIngredient } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <div class="layout">
