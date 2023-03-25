@@ -150,6 +150,13 @@ declare module 'astro:content' {
   collection: "recipe",
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] },
+"cowboy-spaghetti.md": {
+  id: "cowboy-spaghetti.md",
+  slug: "cowboy-spaghetti",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
 "easy-goulash.md": {
   id: "easy-goulash.md",
   slug: "easy-goulash",
