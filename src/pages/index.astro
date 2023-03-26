@@ -35,12 +35,12 @@ const allRecipes = (await getCollection('recipe')).sort(
 				<div class="search-wrapper">
 					<input type="text" id="searchInput" placeholder="Search..." class="search-input">
 					<button id="clearButton" class="search-clear">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-purple-800 w-5 h-5">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-purple-900 w-5 h-5">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
 				</div>
-				<section aria-label="Recipe list" class="searchable">
+				<section aria-label="Recipe list">
 					{allRecipes.map((p) => <PostList post={p} />)}
 				</section>
 			</main>
