@@ -10,7 +10,7 @@
   a:hover, a:active { @apply underline; }
 
   .search-wrapper { @apply mt-8 p-[3px] bg-gradient-to-tl from-blue-400 via-green-300 to-purple-500 rounded-full relative; }
-  .search-input   { @apply text-sm py-2 px-4 rounded-full w-full focus:outline-none placeholder:text-gray-400 focus:text-gray-800; }
+  .search-input   { @apply text-base py-2 px-4 rounded-full w-full focus:outline-none placeholder:text-gray-400 focus:text-gray-800; }
   .search-clear   { @apply absolute right-0 inset-y-0 bg-purple-400 px-3.5 rounded-tr-full rounded-br-full hidden; }
   article h1 { @apply my-6 font-bold px-3 font-sans leading-none text-4xl md:text-5xl; }
   article h2 { @apply my-6 font-bold px-3 font-sans leading-none text-3xl md:text-4xl; }
