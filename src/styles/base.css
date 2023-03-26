@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @layer components {
-  body { background: url('/images/moonrise.jpg') top center; background-size:cover; @apply max-w-xl mx-auto p-2 bg-purple-900 font-sans text-xl text-gray-50 md:px-0; }
+  body { background: url('/images/moonrise.jpg') top center; background-size:cover; @apply max-w-xl mx-auto p-2 bg-purple-900 font-sans text-xl text-purple-50 md:px-0; }
 
   a:link, a:visited { @apply text-purple-100; }
   a:hover, a:active { @apply underline; }
@@ -18,15 +18,15 @@
   .post-preview h1, .post-preview h2, .post-preview h3, .post-preview h4, .post-preview p { @apply my-2 px-0; }
     .post-preview header { @apply font-bold; }
     .post-preview header h1 { @apply leading-none text-purple-900; }
-    .post-preview a.cta { @apply text-gray-900 bg-purple-100 rounded-full px-3 py-1; }
+    .post-preview a.cta { @apply text-gray-800 bg-purple-100 rounded-full px-3 py-1; }
   .post ul { @apply bg-white text-gray-800 rounded-lg; }
 
   ul, ol { @apply my-6; }
     ul { @apply ml-0 list-none; }
     ol { @apply ml-0 list-decimal; }
     li { @apply px-3 py-5 text-xl leading-snug md:text-xl; }
-      li:nth-child(even) { @apply bg-gray-100; }
+      li:nth-child(even) { @apply bg-purple-50; }
       li:last-child { @apply rounded-b-lg; }
 
-  blockquote { @apply border-l-4 border-gray-400 ml-3; }
+  blockquote { @apply border-l-4 border-purple-400 ml-3; }
 }
