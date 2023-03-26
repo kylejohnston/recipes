@@ -87,9 +87,9 @@ const allRecipes = (await getCollection('recipe')).sort(
 
 	function toggleClearButton() {
 		if (searchInput.value === '') {
-			clearButton.classList.add('hidden');
+			clearButton.style.display = 'none';
 		} else {
-			clearButton.classList.remove('hidden');
+			clearButton.style.display = 'block';
 		}
 	}
 
