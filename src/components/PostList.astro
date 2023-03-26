@@ -13,6 +13,6 @@ const { post } = Astro.props;
 		<a href={"/recipe/" + post.slug + "/"}><h1 class="text-2xl">{post.data.title}</h1></a>
 	</header>
 	<p class="text-base">{post.data.description}</p>
-	<p class="text-sm text-gray-400 m-0 p-0">{post.data.category} { post.data.keyIngredient && <span> · </span> <span>{post.data.keyIngredient}</span> }</p>
+	<p class="text-sm text-gray-500 m-0 p-0">{post.data.category} { post.data.keyIngredient && <span> · </span> <span>{post.data.keyIngredient}</span> }</p>
 </article>
 
