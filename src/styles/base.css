@@ -9,7 +9,9 @@
   a:link, a:visited { @apply text-purple-100; }
   a:hover, a:active { @apply underline; }
 
-  /* h1, h2, h3, h4 { @apply my-6 font-bold px-3 font-sans leading-none text-green-500; } */
+  .search-wrapper { @apply mt-8 p-[3px] bg-gradient-to-tl from-blue-400 via-green-300 to-purple-500 rounded-full relative; }
+  .search-input   { @apply text-sm py-2 px-4 rounded-full w-full focus:outline-none placeholder:text-gray-400 focus:text-gray-800; }
+  .search-clear   { @apply leading-tight m-0 absolute right-0 text-3xl inset-y-0 bg-purple-400 px-3.5 rounded-tr-full rounded-br-full; }
   article h1 { @apply my-6 font-bold px-3 font-sans leading-none text-4xl md:text-5xl; }
   article h2 { @apply my-6 font-bold px-3 font-sans leading-none text-3xl md:text-4xl; }
   article h3 { @apply my-6 font-bold px-3 font-sans leading-none text-2xl md:text-3xl; }
