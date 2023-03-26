@@ -4,7 +4,7 @@ pubDate: Mar 25 2023
 title: Cowboy Spaghetti
 # description: 
 category: Dinner
-# keyIngredient: optional
+keyIngredient: Beef
 ---
 
 ## Ingredients
