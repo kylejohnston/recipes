@@ -21,7 +21,7 @@ keyIngredient: Beef
 - **1 tsp** ground cumin
 - **1 tsp** dried oregano
 - **1/2 tsp** garlic powder
-- **2 cups** shredded pepper jack cheese
+- **1 cup** shredded pepper jack cheese
 
 ## Directions
 - Cook bacon
