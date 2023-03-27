@@ -108,6 +108,13 @@ declare module 'astro:content' {
   collection: "recipe",
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] },
+"breakfast-tater-tot-casserole.md": {
+  id: "breakfast-tater-tot-casserole.md",
+  slug: "breakfast-tater-tot-casserole",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
 "buffalo-chicken-dip.md": {
   id: "buffalo-chicken-dip.md",
   slug: "buffalo-chicken-dip",
@@ -160,6 +167,13 @@ declare module 'astro:content' {
 "easy-goulash.md": {
   id: "easy-goulash.md",
   slug: "easy-goulash",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"free-state-cheddar-ale-soup.md": {
+  id: "free-state-cheddar-ale-soup.md",
+  slug: "free-state-cheddar-ale-soup",
   body: string,
   collection: "recipe",
   data: InferEntrySchema<"recipe">
