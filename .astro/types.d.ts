@@ -164,6 +164,13 @@ declare module 'astro:content' {
   collection: "recipe",
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] },
+"deluxe-chocolate-chip-cookies.md": {
+  id: "deluxe-chocolate-chip-cookies.md",
+  slug: "deluxe-chocolate-chip-cookies",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
 "easy-goulash.md": {
   id: "easy-goulash.md",
   slug: "easy-goulash",
@@ -216,6 +223,13 @@ declare module 'astro:content' {
 "spinach-dip-fresh.md": {
   id: "spinach-dip-fresh.md",
   slug: "spinach-dip-fresh",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"texas-sheet-cake.md": {
+  id: "texas-sheet-cake.md",
+  slug: "texas-sheet-cake",
   body: string,
   collection: "recipe",
   data: InferEntrySchema<"recipe">
