@@ -143,6 +143,13 @@ declare module 'astro:content' {
   collection: "recipe",
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] },
+"chicken-soup.md": {
+  id: "chicken-soup.md",
+  slug: "chicken-soup",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
 "chicken-tetrazzini.md": {
   id: "chicken-tetrazzini.md",
   slug: "chicken-tetrazzini",
