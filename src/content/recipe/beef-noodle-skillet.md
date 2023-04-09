@@ -5,6 +5,7 @@ title: Beef Noodle Skillet
 # description:
 category: Dinner
 keyIngredient: Beef
+status: ⭐
 ---
 
 ## Ingredients

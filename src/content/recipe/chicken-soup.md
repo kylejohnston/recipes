@@ -5,6 +5,7 @@ title: Speed Scratch Chicken Soup
 # description: optional
 category: Soup
 keyIngredient: Chicken
+status: 🤔
 ---
 
 ## Ingredients

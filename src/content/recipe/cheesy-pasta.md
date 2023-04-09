@@ -5,6 +5,7 @@ title: Cheesy Tomato Italian Sausage Pasta
 # description:
 category: Dinner
 keyIngredient: Italian sausage
+status: ⭐
 ---
 
 ## Ingredients

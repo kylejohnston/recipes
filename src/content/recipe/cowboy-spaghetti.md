@@ -5,6 +5,7 @@ title: Cowboy Spaghetti
 # description: 
 category: Dinner
 keyIngredient: Beef
+status: ⭐
 ---
 
 ## Ingredients
