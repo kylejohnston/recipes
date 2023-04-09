@@ -11,6 +11,7 @@ const recipe = defineCollection({
     description: z.string().optional(),
     category: z.string().optional(),
     keyIngredient: z.string().optional(),
+    status: z.string().optional(),
     }),
 });
 // 3. Export a single `collections` object to register your collection(s)
