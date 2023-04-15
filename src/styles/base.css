@@ -4,7 +4,21 @@
 @tailwind utilities;
 
 @layer components {
-  body { background: url('/images/moonrise.jpg') top center; background-size:cover; @apply max-w-xl mx-auto p-2 bg-purple-900 font-sans text-xl text-purple-50 md:px-0; }
+  html { 
+    background:
+        linear-gradient(to bottom right, hsl(256deg, 72%, 18%, 1), transparent),
+        linear-gradient(to bottom left, #48178C, transparent),
+        linear-gradient(to top right, #A94279, transparent),
+        linear-gradient(to top left, #CE8BD0, transparent),
+        linear-gradient(to top, #FFF6, transparent),
+        hsl(256deg, 72%, 18%, 0.2);
+    background-blend-mode: hard-light;
+    min-height:100%;
+    @apply mb-0;
+  }
+  body {
+    @apply max-w-xl mx-auto p-2 font-sans text-xl text-purple-50 md:px-0;
+  }
 
   a:link, a:visited { @apply text-purple-100; }
   a:hover, a:active { @apply underline; }
