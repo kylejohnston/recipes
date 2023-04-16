@@ -5,7 +5,7 @@ title: Pancakes
 # description:
 category: Breakfast
 # keyIngredient:
-status: ⭐
+status: 🤩
 ---
 
 ## Ingredients

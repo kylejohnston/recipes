@@ -87,6 +87,13 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"recipe": {
+".template.md": {
+  id: ".template.md",
+  slug: "template",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
 "apple-cider-detox.md": {
   id: "apple-cider-detox.md",
   slug: "apple-cider-detox",
@@ -118,6 +125,13 @@ declare module 'astro:content' {
 "buffalo-chicken-dip.md": {
   id: "buffalo-chicken-dip.md",
   slug: "buffalo-chicken-dip",
+  body: string,
+  collection: "recipe",
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] },
+"buffalo-chicken-pasta.md": {
+  id: "buffalo-chicken-pasta.md",
+  slug: "buffalo-chicken-pasta",
   body: string,
   collection: "recipe",
   data: InferEntrySchema<"recipe">
