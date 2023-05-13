@@ -51,10 +51,10 @@ const allRecipes = (await getCollection('recipe')).sort(
 <script>
 	const searchInput = document.getElementById('searchInput');
 	const clearButton = document.getElementById('clearButton');
-	let results = document.querySelectorAll('.searchable');
+	const initialResults = document.querySelectorAll('.searchable');
 
 	// Cache the initial set of results
-	const initialResults = results;
+	let results = initialResults;
 
 	searchInput.addEventListener('input', debounce(search, 300));
 	searchInput.addEventListener('input', toggleClearButton);
