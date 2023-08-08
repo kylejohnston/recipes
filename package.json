@@ -11,7 +11,7 @@
   "devDependencies": {
     "@astrojs/preact": "^2.1.0",
     "@astrojs/renderer-preact": "^0.5.0",
-    "astro": "^2.1.7"
+    "astro": "^2.10.3"
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.1.1",
