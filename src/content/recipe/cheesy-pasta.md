@@ -16,7 +16,7 @@ status: 🤩
 - **1/8 tsp** basil
 - **1/8 tsp** oregano
 - **1 Tbsp** flour
-- **1/3 cup** beef broth
+- **1/2 cup** beef broth
 - **1 can (8 oz)** Garlic tomato sauce
 - **2 oz** cream cheese
 - **2/3 cup** cheddar
