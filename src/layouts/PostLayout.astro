@@ -21,3 +21,35 @@ const { title, description, pubDate, heroImage, permalink, alt } = content;
 		</div>
 	</body>
 </html>
+
+<script>
+        const copyH1Content = (e) => {
+            const h1Element = e.target; // Get the clicked <h1> element
+            const value = h1Element.innerText;
+
+            // Create a temporary text area to copy the content
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = value;
+            document.body.appendChild(tempTextArea);
+
+            // Select and copy the content
+            tempTextArea.select();
+            document.execCommand('copy');
+
+            // Clean up the temporary text area
+            document.body.removeChild(tempTextArea);
+
+            // Display the confirmation message
+            const confirmationMessage = document.getElementById('confirmationMessage');
+            confirmationMessage.style.display = 'block';
+
+            // Hide the confirmation message after a few seconds
+            setTimeout(() => {
+                confirmationMessage.style.display = 'none';
+            }, 2000); // Display for 2 seconds
+        }
+
+        // Add the click event listener to the <h1> element
+        const h1Element = document.querySelector('h1');
+        h1Element.addEventListener('click', copyH1Content);
+</script>
