@@ -16,6 +16,7 @@ const { title, description, pubDate, heroImage, permalink, alt } = content;
 		<MainNav />
 		<div class="post wrapper rounded-lg py-2">
 			<PostContent {title} {heroImage} {pubDate} {alt} {description}>
+				<div id="confirmationMessage" class="copied">Copied!</div>
 				<slot /> <!-- add content from .md -->
 			</PostContent>
 		</div>
