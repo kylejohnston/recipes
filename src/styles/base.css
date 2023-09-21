@@ -24,7 +24,7 @@
   a:hover, a:active { @apply underline; }
 
   .logo { @apply flex justify-center hover:no-underline hover:scale-125 transition-transform duration-300 ease-in-out; }
-    .copied { @apply absolute top-12 m-auto right-1/2 translate-x-1/2 bg-purple-900 py-5 px-10 rounded-full shadow-2xl border-purple-600 border-2 hidden; }
+    .copied { @apply fixed z-10 m-auto right-1/2 translate-x-1/2 bg-purple-900 py-5 px-10 rounded-full shadow-2xl border-purple-600 border-2 hidden; }
   .search-wrapper { @apply mt-8 p-[3px] bg-gradient-to-tl from-blue-400 via-green-300 to-purple-500 rounded-full relative; }
   .search-input   { @apply text-base py-2 px-4 rounded-full w-full text-gray-500 focus:outline-none placeholder:text-gray-400 focus:text-gray-900; }
   .search-clear   { @apply absolute right-0 inset-y-0 bg-purple-400 pl-3 pr-3.5 rounded-tr-full rounded-br-full hidden; }
