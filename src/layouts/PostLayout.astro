@@ -24,33 +24,35 @@ const { title, description, pubDate, heroImage, permalink, alt } = content;
 </html>
 
 <script>
-        const copyH1Content = (e) => {
-            const h1Element = e.target; // Get the clicked <h1> element
-            const value = h1Element.innerText;
+let quoteText = document.querySelector('h1');
+let handleCopyClick = document.querySelector('#recipeTitle');
 
-            // Create a temporary text area to copy the content
-            const tempTextArea = document.createElement('textarea');
-            tempTextArea.value = value;
-            document.body.appendChild(tempTextArea);
+handleCopyClick.addEventListener('click', () => {
+    let text = quoteText.textContent;
+    toClipboard(text);
+});
 
-            // Select and copy the content
-            tempTextArea.select();
-            document.execCommand('copy');
+function toClipboard(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
 
-            // Clean up the temporary text area
-            document.body.removeChild(tempTextArea);
+    // Make the text area invisible
+    textArea.style.position = 'fixed';
+    textArea.style.top = '-9999px';
 
-            // Display the confirmation message
-            const confirmationMessage = document.getElementById('confirmationMessage');
-            confirmationMessage.style.display = 'block';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
 
-            // Hide the confirmation message after a few seconds
-            setTimeout(() => {
-                confirmationMessage.style.display = 'none';
-            }, 2000); // Display for 2 seconds
-        }
-
-        // Add the click event listener to the <h1> element
-        const h1Element = document.querySelector('h1');
-        h1Element.addEventListener('click', copyH1Content);
+    try {
+    document.execCommand('copy');
+    alert(`👍 copied!`);
+    } catch (err) {
+    console.error('Failed to copy ', err);
+    alert('Copy failed. Please copy the text manually.');
+    } finally {
+    document.body.removeChild(textArea);
+    }
+}
 </script>
+    
