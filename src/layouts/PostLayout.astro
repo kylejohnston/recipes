@@ -29,30 +29,6 @@ let handleCopyClick = document.querySelector('#recipeTitle');
 
 handleCopyClick.addEventListener('click', () => {
     let text = quoteText.textContent;
-    toClipboard(text);
+    navigator.clipboard.writeText(`${text}`);
 });
-
-function toClipboard(text) {
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-
-    // Make the text area invisible
-    textArea.style.position = 'fixed';
-    textArea.style.top = '-9999px';
-
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-
-    try {
-    document.execCommand('copy');
-    alert(`👍 copied!`);
-    } catch (err) {
-    console.error('Failed to copy ', err);
-    alert('Copy failed. Please copy the text manually.');
-    } finally {
-    document.body.removeChild(textArea);
-    }
-}
 </script>
-    
