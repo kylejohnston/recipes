@@ -267,6 +267,13 @@ declare module 'astro:content' {
   collection: "recipe";
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] };
+"dipping-sauce.md": {
+	id: "dipping-sauce.md";
+  slug: "dipping-sauce";
+  body: string;
+  collection: "recipe";
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] };
 "easy-goulash.md": {
 	id: "easy-goulash.md";
   slug: "easy-goulash";
