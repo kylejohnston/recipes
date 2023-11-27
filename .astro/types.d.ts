@@ -288,6 +288,13 @@ declare module 'astro:content' {
   collection: "recipe";
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] };
+"lunchbox-brownies.md": {
+	id: "lunchbox-brownies.md";
+  slug: "lunchbox-brownies";
+  body: string;
+  collection: "recipe";
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] };
 "marsala.md": {
 	id: "marsala.md";
   slug: "marsala";
