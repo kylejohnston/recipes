@@ -260,6 +260,13 @@ declare module 'astro:content' {
   collection: "recipe";
   data: InferEntrySchema<"recipe">
 } & { render(): Render[".md"] };
+"creamy-chicken-pasta.md": {
+	id: "creamy-chicken-pasta.md";
+  slug: "creamy-chicken-pasta";
+  body: string;
+  collection: "recipe";
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] };
 "deluxe-chocolate-chip-cookies.md": {
 	id: "deluxe-chocolate-chip-cookies.md";
   slug: "deluxe-chocolate-chip-cookies";
@@ -270,6 +277,20 @@ declare module 'astro:content' {
 "dipping-sauce.md": {
 	id: "dipping-sauce.md";
   slug: "dipping-sauce";
+  body: string;
+  collection: "recipe";
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] };
+"draft-spinach-dip-frozen.md": {
+	id: "draft-spinach-dip-frozen.md";
+  slug: "draft-spinach-dip-frozen";
+  body: string;
+  collection: "recipe";
+  data: InferEntrySchema<"recipe">
+} & { render(): Render[".md"] };
+"draft-sugar-cookies.md": {
+	id: "draft-sugar-cookies.md";
+  slug: "draft-sugar-cookies";
   body: string;
   collection: "recipe";
   data: InferEntrySchema<"recipe">
