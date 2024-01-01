@@ -3,7 +3,7 @@ setup: import Layout from '../../layouts/PostLayout.astro'
 pubDate: 2018-01-01
 title: Sugar Cookies
 # description:
-category: Desert
+category: Dessert
 # keyIngredient:
 ---
 
