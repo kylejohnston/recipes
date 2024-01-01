@@ -3,6 +3,7 @@
 import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import MainNav from '../components/MainNav.astro';
+import Search from '../components/Search.astro';
 import PostList from '../components/PostList.astro';
 
 // Component Script:
@@ -32,14 +33,7 @@ const allRecipes = (await getCollection('recipe')).sort(
 		<MainNav />
 		<div class="wrapper px-3">
 			<main class="content">
-				<div class="search-wrapper">
-					<input type="text" id="searchInput" placeholder="Search..." class="search-input">
-					<button id="clearButton" class="search-clear">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-purple-900 w-5 h-5">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
+				<Search />
 				<section aria-label="Recipe list">
 					{allRecipes.map((p) => <PostList post={p} />)}
 				</section>
@@ -48,75 +42,4 @@ const allRecipes = (await getCollection('recipe')).sort(
 	</body>
 </html>
 
-<script>
-	const searchInput = document.getElementById('searchInput');
-	const clearButton = document.getElementById('clearButton');
-	const initialResults = document.querySelectorAll('.searchable');
 
-	// Cache the initial set of results
-	let results = initialResults;
-
-	searchInput.addEventListener('input', debounce(search, 300));
-	searchInput.addEventListener('input', toggleClearButton);
-	clearButton.addEventListener('click', clearSearch);
-	document.addEventListener('keydown', handleKeyDown);
-	document.addEventListener('keydown', handleFocus);
-
-	function search() {
-		const searchText = searchInput.value.toLowerCase();
-
-		results.forEach(function(result) {
-			const text = result.textContent.toLowerCase();
-
-			if (text.includes(searchText)) {
-				result.classList.remove('hidden');
-			} else {
-				result.classList.add('hidden');
-			}
-		});
-	}
-
-	function clearSearch() {
-		searchInput.value = '';
-		results = initialResults;
-		results.forEach(function(result) {
-			result.classList.remove('hidden');
-		});
-		toggleClearButton();
-	}
-
-	function toggleClearButton() {
-		if (searchInput.value === '') {
-			clearButton.style.display = 'none';
-		} else {
-			clearButton.style.display = 'block';
-		}
-	}
-
-	function handleKeyDown(event) {
-		if (event.key === 'Escape') {
-			clearSearch();
-			searchInput.blur();
-		}
-	}
-
-	function handleFocus(event) {
-		if (event.key === '/' && !searchInput.matches(':focus')) {
-			event.preventDefault();
-			searchInput.focus();
-		}
-	}
-
-	// Debounce function to delay search execution
-	function debounce(func, wait) {
-		let timeout;
-		return function executedFunction(...args) {
-			const later = () => {
-				clearTimeout(timeout);
-				func(...args);
-			};
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-		};
-	}
-</script>
