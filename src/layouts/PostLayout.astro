@@ -1,6 +1,6 @@
 ---
 // PURPOSE: VIEW A SINGLE POST/RECIPE
-import Head from '../components/BaseHead.astro';
+import BaseHead from '../components/BaseHead.astro';
 import MainNav from '../components/MainNav.astro';
 import PostContent from '../components/PostContent.astro';
 
@@ -9,7 +9,7 @@ const { title, description, pubDate, heroImage, permalink, alt } = content;
 ---
 <html lang="en">
 	<head>
-		<Head {title} {description} {permalink} />
+		<BaseHead {title} {description} {permalink} />
 	</head>
 
 	<body class="mx-auto"><!-- copied -->
