@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 pubDate: Dec 25 2023
-title: Creamy Chicken Pasta
+title: Carol's Creamy Chicken Pasta
 # description: optional
 category: Dinner
 keyIngredient: Chicken
@@ -12,7 +12,7 @@ status: 🤩
 - Onion
 - **1 cup** cheddar cheese
 - Cream cheese
-- Chicken broth
+- **1/2 cup** Chicken broth
 - **3/4 cup** Buttermilk ranch dressing
 - **2 cups** pasta
 - Peas
