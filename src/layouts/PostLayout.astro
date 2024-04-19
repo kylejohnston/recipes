@@ -8,27 +8,42 @@ const { content } = Astro.props;
 const { title, description, pubDate, heroImage, permalink, alt } = content;
 ---
 <html lang="en">
-	<head>
-		<BaseHead {title} {description} {permalink} />
-	</head>
+<head>
+	<BaseHead {title} {description} {permalink} />
+</head>
 
-	<body class="mx-auto"><!-- copied -->
-		<MainNav />
-		<div class="post wrapper rounded-lg py-2">
-            <PostContent {title} {heroImage} {pubDate} {alt} {description}>
-				<slot /> <!-- add content from .md -->
-			</PostContent>
-		</div>
-        <div id="confirmationMessage" class="copied">Copied!</div>
-	</body>
+<body class="mx-auto"><!-- copied -->
+	<MainNav />
+	<div class="post wrapper rounded-lg py-2">
+		<PostContent {title} {heroImage} {pubDate} {alt} {description}>
+			<slot /> <!-- add content from .md -->
+		</PostContent>
+	</div>
+	<div id="confirmationMessage" class="copied">Copied!</div>
+</body>
 </html>
 
 <script>
-let quoteText = document.querySelector('h1');
-let handleCopyClick = document.querySelector('#recipeTitle');
-
-handleCopyClick.addEventListener('click', () => {
-    let text = quoteText.textContent;
-    navigator.clipboard.writeText(`${text}`);
-});
+	function copyTitle() {
+		const recipeTitle = document.getElementById('recipeTitle');
+		
+		if (recipeTitle) {
+			recipeTitle.addEventListener('click', () => {
+				const titleText = recipeTitle.textContent;
+				navigator.clipboard.writeText(titleText)
+				.then(() => {
+					recipeTitle.textContent = 'Copied!';
+					setTimeout(() => {
+						recipeTitle.textContent = titleText;
+					}, 1000);
+				})
+				.catch(err => {
+					console.error('Failed to copy text: ', err);
+				});
+			});
+		} else {
+			console.error('Element with ID "recipeTitle" not found.');
+		}
+	}
+	document.addEventListener('DOMContentLoaded', copyTitle);
 </script>
