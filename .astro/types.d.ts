@@ -174,221 +174,235 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"recipe": {
+		"posts": {
+};
+"recipe": {
+".template.md": {
+	id: ".template.md";
+  slug: "template";
+  body: string;
+  collection: "recipe";
+  data: any
+} & { render(): Render[".md"] };
 "apple-cider-detox.md": {
 	id: "apple-cider-detox.md";
   slug: "apple-cider-detox";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
+} & { render(): Render[".md"] };
+"bacon-method.md": {
+	id: "bacon-method.md";
+  slug: "bacon-method";
+  body: string;
+  collection: "recipe";
+  data: any
 } & { render(): Render[".md"] };
 "beef-noodle-skillet.md": {
 	id: "beef-noodle-skillet.md";
   slug: "beef-noodle-skillet";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "beef-stroganoff.md": {
 	id: "beef-stroganoff.md";
   slug: "beef-stroganoff";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "breakfast-tater-tot-casserole.md": {
 	id: "breakfast-tater-tot-casserole.md";
   slug: "breakfast-tater-tot-casserole";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "buffalo-chicken-dip.md": {
 	id: "buffalo-chicken-dip.md";
   slug: "buffalo-chicken-dip";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "buffalo-chicken-pasta.md": {
 	id: "buffalo-chicken-pasta.md";
   slug: "buffalo-chicken-pasta";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "carbonara.md": {
 	id: "carbonara.md";
   slug: "carbonara";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "cheesy-pasta.md": {
 	id: "cheesy-pasta.md";
   slug: "cheesy-pasta";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "chicken-enchiladas.md": {
 	id: "chicken-enchiladas.md";
   slug: "chicken-enchiladas";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "chicken-soup.md": {
 	id: "chicken-soup.md";
   slug: "chicken-soup";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "chicken-tetrazzini.md": {
 	id: "chicken-tetrazzini.md";
   slug: "chicken-tetrazzini";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "coconut-macaroons.md": {
 	id: "coconut-macaroons.md";
   slug: "coconut-macaroons";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "cowboy-spaghetti.md": {
 	id: "cowboy-spaghetti.md";
   slug: "cowboy-spaghetti";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "creamy-chicken-pasta.md": {
 	id: "creamy-chicken-pasta.md";
   slug: "creamy-chicken-pasta";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "deluxe-chocolate-chip-cookies.md": {
 	id: "deluxe-chocolate-chip-cookies.md";
   slug: "deluxe-chocolate-chip-cookies";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "dipping-sauce.md": {
 	id: "dipping-sauce.md";
   slug: "dipping-sauce";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "draft-spinach-dip-frozen.md": {
 	id: "draft-spinach-dip-frozen.md";
   slug: "draft-spinach-dip-frozen";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "draft-sugar-cookies.md": {
 	id: "draft-sugar-cookies.md";
   slug: "draft-sugar-cookies";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "easy-goulash.md": {
 	id: "easy-goulash.md";
   slug: "easy-goulash";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "free-state-cheddar-ale-soup.md": {
 	id: "free-state-cheddar-ale-soup.md";
   slug: "free-state-cheddar-ale-soup";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "lunchbox-brownies.md": {
 	id: "lunchbox-brownies.md";
   slug: "lunchbox-brownies";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "marsala.md": {
 	id: "marsala.md";
   slug: "marsala";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "pancakes.md": {
 	id: "pancakes.md";
   slug: "pancakes";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "scarpariello.md": {
 	id: "scarpariello.md";
   slug: "scarpariello";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "shepherds-pie.md": {
 	id: "shepherds-pie.md";
   slug: "shepherds-pie";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "sloppy-joes.md": {
 	id: "sloppy-joes.md";
   slug: "sloppy-joes";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "spinach-dip-fresh.md": {
 	id: "spinach-dip-fresh.md";
   slug: "spinach-dip-fresh";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "texas-sheet-cake.md": {
 	id: "texas-sheet-cake.md";
   slug: "texas-sheet-cake";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 "tortilla-soup.md": {
 	id: "tortilla-soup.md";
   slug: "tortilla-soup";
   body: string;
   collection: "recipe";
-  data: InferEntrySchema<"recipe">
+  data: any
 } & { render(): Render[".md"] };
 };
 
 	};
 
 	type DataEntryMap = {
-		"posts": {
-};
-
+		
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }
