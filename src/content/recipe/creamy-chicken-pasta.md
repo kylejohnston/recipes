@@ -16,6 +16,7 @@ status: 🤩
 - **3/4 cup** Buttermilk ranch dressing
 - **2 cups** pasta
 - Peas
+- Bacon
 
 ## Directions
 - Season chicken
