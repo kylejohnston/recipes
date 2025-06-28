@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import MainNav from '../../components/MainNav.astro';
+
+const allRecipes = await getCollection('recipe');
+
+// Get unique status tags
+const tags = [...new Set(allRecipes.map(post => post.data.status).filter(Boolean))];
+
+// Count recipes for each tag
+const tagCounts = tags.reduce((acc, tag) => {
+  acc[tag] = allRecipes.filter(post => post.data.status === tag).length;
+  return acc;
+}, {});
+
+const title = 'Recipe Tags · 🐼';
+const description = 'Browse recipes by tag';
+const permalink = 'https://softpanda.de/tags';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+
+  <body class="mx-auto">
+    <MainNav />
+    <div class="wrapper px-3">
+      <h1 class="text-3xl font-bold my-6">Recipe Tags</h1>
+      
+      <section>
+        {tags.map(tag => (
+          <a href={`/tags/${encodeURIComponent(tag)}/`} class="post-preview block">
+            <h2 class="text-xl font-bold">{tag}</h2>
+            <p class="text-sm text-gray-600">{tagCounts[tag]} recipes</p>
+          </a>
+        ))}
+      </section>
+    </div>
+  </body>
+</html>
