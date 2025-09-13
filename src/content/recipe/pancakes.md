@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jun 22 2000
 title: Pancakes
 # description:

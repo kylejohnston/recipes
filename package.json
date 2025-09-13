@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev --experimental-integrations",
-    "start": "astro dev --experimental-integrations",
-    "build": "astro build --experimental-integrations",
-    "preview": "astro preview --experimental-integrations"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^5.0.3",
-    "astro": "^4.16.16"
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.7",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.13"
   }
 }

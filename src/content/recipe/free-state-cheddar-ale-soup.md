@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Apr 5, 2010
 title: Free State Brewing Company Cheddar Ale Soup
 # description:

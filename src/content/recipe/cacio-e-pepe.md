@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jul 15 2025
 title: Cacio e Pepe Ramen
 # description: optional

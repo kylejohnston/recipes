@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Apr 30 2022
 title: Easy Goulash
 category: Dinner

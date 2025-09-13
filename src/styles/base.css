@@ -1,7 +1,139 @@
 /* The integration's default injected base.css file */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-gray-950: #020617;
+
+  --color-green-50: #f7fee7;
+  --color-green-100: #ecfccb;
+  --color-green-200: #d9f99d;
+  --color-green-300: #bef264;
+  --color-green-400: #a3e635;
+  --color-green-500: #84cc16;
+  --color-green-600: #65a30d;
+  --color-green-700: #4d7c0f;
+  --color-green-800: #3f6212;
+  --color-green-900: #365314;
+  --color-green-950: #1a2e05;
+
+  --color-blue-50: #eef2ff;
+  --color-blue-100: #e0e7ff;
+  --color-blue-200: #c7d2fe;
+  --color-blue-300: #a5b4fc;
+  --color-blue-400: #818cf8;
+  --color-blue-500: #6366f1;
+  --color-blue-600: #4f46e5;
+  --color-blue-700: #4338ca;
+  --color-blue-800: #3730a3;
+  --color-blue-900: #312e81;
+  --color-blue-950: #1e1b4b;
+
+  --color-purple-50: #f5f3ff;
+  --color-purple-100: #ede9fe;
+  --color-purple-200: #ddd6fe;
+  --color-purple-300: #c4b5fd;
+  --color-purple-400: #a78bfa;
+  --color-purple-500: #8b5cf6;
+  --color-purple-600: #7c3aed;
+  --color-purple-700: #6d28d9;
+  --color-purple-800: #5b21b6;
+  --color-purple-900: #4c1d95;
+  --color-purple-950: #2e1065;
+
+  --font-sans: IBM Plex Sans;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility logo {
+  @apply flex justify-center hover:no-underline hover:scale-125 transition-transform duration-300 ease-in-out;
+}
+
+@utility copied {
+  @apply absolute top-12 right-1/2 translate-x-1/2 bg-purple-900 py-5 px-10 rounded-full shadow-2xl border-purple-600 border-2 hidden;
+}
+
+@utility search-wrapper {
+  @apply mt-8 p-[3px] bg-linear-to-tl from-blue-400 via-green-300 to-purple-500 rounded-full relative;
+}
+
+@utility search-input {
+  @apply bg-white text-base py-2 px-4 rounded-full w-full text-gray-500 focus:outline-hidden placeholder:text-gray-400 focus:text-gray-900;
+}
+
+@utility search-clear {
+  @apply absolute right-0 inset-y-0 bg-purple-400 pl-3 pr-3.5 rounded-tr-full rounded-br-full hidden;
+}
+
+@utility post-preview {
+  @apply bg-white my-6 px-3 py-2 shadow-xl rounded-lg text-gray-800;
+  & h1 {
+    @apply my-2 px-0;
+  }
+  & h2 {
+    @apply my-2 px-0;
+  }
+  & h3 {
+    @apply my-2 px-0;
+  }
+  & h4 {
+    @apply my-2 px-0;
+  }
+  & p {
+    @apply my-2 px-0;
+  }
+  & header {
+    @apply font-bold;
+  }
+  & header h1 {
+    @apply leading-none text-purple-900;
+  }
+  & a.cta {
+    @apply text-gray-800 bg-purple-100 rounded-full px-3 py-1;
+  }
+}
+
+@utility cta {
+  .post-preview &a {
+    @apply text-gray-800 bg-purple-100 rounded-full px-3 py-1;
+  }
+}
+
+@utility post {
+  & ul {
+    @apply bg-white text-gray-800 rounded-lg;
+  }
+}
 
 @layer components {
   html { 
@@ -22,22 +154,10 @@
 
   a:link, a:visited { @apply text-purple-100; }
   a:hover, a:active { @apply underline; }
-
-  .logo { @apply flex justify-center hover:no-underline hover:scale-125 transition-transform duration-300 ease-in-out; }
-    .copied { @apply absolute top-12 right-1/2 translate-x-1/2 bg-purple-900 py-5 px-10 rounded-full shadow-2xl border-purple-600 border-2 hidden; }
-  .search-wrapper { @apply mt-8 p-[3px] bg-gradient-to-tl from-blue-400 via-green-300 to-purple-500 rounded-full relative; }
-  .search-input   { @apply text-base py-2 px-4 rounded-full w-full text-gray-500 focus:outline-none placeholder:text-gray-400 focus:text-gray-900; }
-  .search-clear   { @apply absolute right-0 inset-y-0 bg-purple-400 pl-3 pr-3.5 rounded-tr-full rounded-br-full hidden; }
   article h1 { @apply my-6 font-bold px-3 font-sans leading-none text-4xl md:text-5xl; text-wrap: balance; }
   article h2 { @apply my-6 font-bold px-3 font-sans leading-none text-3xl md:text-4xl; text-wrap: balance; }
   article h3 { @apply my-6 font-bold px-3 font-sans leading-none text-2xl md:text-3xl; text-wrap: balance; }
   article p  { @apply text-xl leading-normal my-6 px-3; }
-  .post-preview { @apply bg-white my-6 px-3 py-2 shadow-xl rounded-lg text-gray-800; }
-  .post-preview h1, .post-preview h2, .post-preview h3, .post-preview h4, .post-preview p { @apply my-2 px-0; }
-    .post-preview header { @apply font-bold; }
-    .post-preview header h1 { @apply leading-none text-purple-900; }
-    .post-preview a.cta { @apply text-gray-800 bg-purple-100 rounded-full px-3 py-1; }
-  .post ul { @apply bg-white text-gray-800 rounded-lg; }
 
   ul, ol { @apply my-6; }
     ul { @apply ml-0 list-none; }

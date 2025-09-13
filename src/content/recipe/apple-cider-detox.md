@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: May 5 2022
 title: Apple Cider Tumeric Detox Drink
 # description:

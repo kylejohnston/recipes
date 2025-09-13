@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Mar 14 2020
 title: Speed Scratch Chicken Soup
 # description: optional

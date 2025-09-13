@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Dec 22 2021
 title: Breakfast Tater Tot Casserole
 # description: optional

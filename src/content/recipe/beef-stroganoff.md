@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jan 1 2020
 title: Beef Stroganoff
 # description:

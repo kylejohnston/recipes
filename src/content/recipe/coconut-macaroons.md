@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jun 21 2000
 title: Coconut Macaroons
 # description:

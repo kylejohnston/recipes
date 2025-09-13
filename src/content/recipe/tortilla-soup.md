@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jun 12 2018
 title: Tortilla Soup
 # description:
