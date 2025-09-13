@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Dec 25 2023
 title: Carol's Creamy Chicken Pasta
 # description: optional

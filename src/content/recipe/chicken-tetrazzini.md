@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Aug 15 2018
 title: Chicken Tetrazzini
 # description:

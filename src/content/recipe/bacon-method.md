@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Mar 14 2020
 title: The Bacon Method
 description: Make perfect, crispy bacon every time.

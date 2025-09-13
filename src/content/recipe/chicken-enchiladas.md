@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jun 11 2022
 title: Sour Cream Chicken Enchiladas
 category: Dinner

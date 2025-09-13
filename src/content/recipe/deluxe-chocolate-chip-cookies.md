@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jan 1 2020
 title: Deluxe Chocolate Chip Cookies
 description: This recipe is the result of years of experimentation attempting to create a luxurious version of the classic chocolate chip cookie. The result is a big cookie with a fudgy inside and a crisp exterior.

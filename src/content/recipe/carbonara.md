@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 title: Carbonara
 # description:
 pubDate: Aug 1 2018

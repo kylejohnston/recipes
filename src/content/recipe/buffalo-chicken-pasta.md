@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Mar 14 2023
 title: Buffalo Chicken Pasta
 # description: optional

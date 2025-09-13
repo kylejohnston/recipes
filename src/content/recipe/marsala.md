@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Aug 25 2018
 title: Marsala
 # description:

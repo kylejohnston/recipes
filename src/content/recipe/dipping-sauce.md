@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: May 15 2023
 title: Dipping Sauce
 # description:

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Oct 24 2022
 title: Beef Noodle Skillet
 # description:

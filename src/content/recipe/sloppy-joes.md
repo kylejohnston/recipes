@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jan 2 2020
 title: Sloppy Joes
 # description:

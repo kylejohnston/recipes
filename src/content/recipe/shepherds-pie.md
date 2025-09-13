@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Aug 30 2018
 title: Shepherd's Pie
 # description:

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Mar 25 2023
 title: Cowboy Spaghetti
 # description: 

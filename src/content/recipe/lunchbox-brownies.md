@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Nov 27 2023
 title: Lunchbox Brownies
 # description: optional

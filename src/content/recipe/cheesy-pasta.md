@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/PostLayout.astro
 pubDate: Jun 14 2022
 title: Cheesy Tomato Pasta with Italian Sausage
 # description:
